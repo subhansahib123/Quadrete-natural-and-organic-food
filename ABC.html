@@ -1,0 +1,874 @@
+<html>
+    <head>
+       <title>Buy Dry Fruits and Nuts</title>
+       <meta name="viewport" content="width=device-width ,initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <style>
+
+            .cart_view_display{
+
+                display: block;
+                position: absolute;
+                top: 100px;
+                right: 0px;
+                z-index: 1000;
+                background: white;
+                width: 28%;
+
+
+            }
+            .dropbtn {
+  
+            color: black;
+            padding: 0px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+            font-weight: 500;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-style: italic;
+            }
+
+            .dropdown-content a {
+            color: black;
+            padding: 10px 12px;
+            text-decoration: none;
+            display: block;
+            }
+
+            .dropdown-content a:hover {background-color:rgb(170, 170, 216)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.btn-outline-danger {
+    color: black ;
+    border-color: #a2c95b !important;
+    border-width: 2px;
+}
+.btn-outline-danger:active {
+    color: #fff;
+    background-color: #a2c95b !important;
+    border-color: #a2c95b !important;
+    
+}
+.btn-outline-danger:hover {color: #fff;
+    background-color: #a2c95b !important;
+    border-color: #a2c95b !important;
+}
+.btn-check:focus+.btn-outline-danger, .btn-outline-danger:focus {
+    box-shadow: 0 0 0 0.25rem white;
+}
+.btn-outline-success:active {
+    color: #fff;
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    
+}
+.btn-outline-success:focus {
+    color: #fff;
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    
+}
+.btn-outline-success:hover {color: #fff;
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+.btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.25rem white;}
+    .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem white;
+}
+@media screen and (max-width: 900px) {
+    #sidebar{
+        display: none;
+    }
+    #bars{
+        display: none;
+    }
+}
+
+.cart_view_display {
+    width: 33%;
+    top: 0px;
+}
+@media screen and (max-width: 970px) {
+    .cart_{
+        display: none;
+    }
+}
+
+.btn-success ,.btn-success:hover,.btn-success:active,.btn-success:focus {
+    color: #719926;
+    background-color: white;
+    border-color: #719926;
+    border: 1px ridge #719926;
+    box-shadow: 0 0 0 0.25rem white;
+}
+#ABS:hover {
+    background-color:rgb(170, 170, 216);
+    color: white;
+}
+.input:focus-visible{
+    border-color: none;
+}
+        </style>
+    </head>
+    <body>
+        <div id="landing-page">
+            <div class="container-fluid ">
+                <div class="header">
+                    <div class="container">
+                        <div class="row mt-2">
+                            <div class="col-2">
+                            <div class="row">
+                                <div class="col gx-0 pt-2 ">
+                                    <a href="" ></a><i id="bars" class="fal fa-bars" style="padding-left: 42px;padding-right: 10px; padding-top: 5px; font-size: 20px;"></i></a> 
+                                </div>
+                                <div class="col gx-0">
+                                    <a href="file:///E:/HTML/Dry%20Fruist.html?"><img src="/DOWNLOADS/logo.png" alt="logo" style="height: 50px;"></a> 
+                                </div>
+                           </div>
+                            </div>   
+                            <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="map-container">
+                                        <p style="height: 50%;margin-bottom: -7px;font-size: 15px;">Delivering to </p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropbtn" style="font-size:17px;">Location</button>
+                                        <div class="dropdown-content">
+                                        <a href="#">Faisalabad</a>
+                                        <a href="#">Lahore</a>
+                                        <a href="#">Islamabad</a>
+                                        </div>
+                                      </div>
+                                      <i class="far fa-angle-down"></i>
+                                </div>
+                                <div class="col-3 pt-3" style="padding-right: 30px;">
+                                    <div class="row">
+                                        <div class="col-8 align-self-start"></div>
+                                        <div class="col-4 icon-cart" >
+                                            <i class="far fa-shopping-cart" onclick="cart_view()" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col gx-0">
+                            <form class="w-100 me-3">
+                                <input style="margin-left: 44px;border:2px  #b9e567 ridge; border:2px  #b9e567 ridge ;border-radius: none;border-radius: 0px; " type="search" class="form-control" placeholder="Search...." aria-label="Search" >
+                            </form>
+                        </div>
+                        <div class="col-1 gx-0">
+                            <i class="fal fa-search" style="padding: 12px;background-color:  #b9e567; border:2px  #b9e567 ridge ;border-left: none;color: white;font-size:  17px;;"></i>
+                        </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="main-content">
+                    <div class="row" >
+                        <div class="col">
+                            <h1 style="font-size: 25px;text-align: center;color: #625e5e;" >Dry Fruits & Nuts</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-2 ">
+                       <div class="col-3" id="sidebar">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-1">
+                                    <a href=""><i class="far fa-bars" style="color: #a4f807;padding-top: 4px"></i></a> 
+                                </div>
+                                <div class="col">
+                                    <p style="font-size:17px;">  Categories</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">1: Dry Fruits</button>
+                                    <div class="dropdown-content">
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Cashew</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Mixed Nuts</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Almonds</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Walnuts</a>
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Pistachio</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Dried Fig (Anjeer)</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Raisins Kishmish</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Dried Apricots</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">2: Honey</button>
+                                    <div class="dropdown-content">
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Sidr 'Beri' Honey</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Black Forest Honey</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Natural Honey</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Acacia Honey</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">3: Sweeteners / Sugar</button>
+                                    <div class="dropdown-content">
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Raw White Sugar</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Organic Brown Sugar</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">4: Herbal and Organic</button>
+                                    <div class="dropdown-content">
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Lemon Grass Tea</a>
+                                    <a href="#"style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Organic Tea</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">5: Dates</button>
+                                    <div class="dropdown-content">
+                                    <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">-Ajwa Dates</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="font-weight: 500;font-size: 18px;color: gray;">6: Oils</button>
+                                    <div class="dropdown-content">
+                                        <a href="#" style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;">Organic Oil</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col mt-0" >
+                                    <p style="color: white;padding: 0px 0px 0px 12px;width: 75px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;border-radius: 3px;font-size: 13px;" > 5% off</p>
+                                    <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-almond-usa-100-gm-5e6d2eca309ed.jpeg" data-src="https://pictures.grocerapps.com/lgthumb/grocerapp-almond-usa-100-gm-5e6d2eca309ed.jpeg" alt="almond 1" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                    <h1 style="font-weight: 400;font-size:20px ;">Almond (بادام )  </h1>
+                                    <div class="row " >
+                                        <div class="col mt-2 mb-2" >
+                                            <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                        </div>
+                                    </div> 
+                                    <h4 style="font-weight: 400;font-size: 18px;">Rs.179<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs.199</small> </h4>
+                                    <button type="button" onclick="addcart()" class="btn btn-outline-danger cart-btn" style="width: 100%; " >ADD TO CART</button>
+                                    <hr style="color: black;">
+                                    </div>
+                                    <div class="col mt-0 ">
+                                    <p style="color: white;width: 75px;padding: 0px 0px 0px 12px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;border-radius: 3px;font-size: 13px;" > 10% off</p>
+                                    <img  src="https://pictures.grocerapps.com/lgthumb/grocerapp-raisan-irani-100-gm-5e6d31d525d58.jpeg"  alt="almond 2" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                    <h1 style="font-weight: 400;font-size:20px ;">Raisin Khani (کشمش ) </h1>
+                                    <div class="row " >
+                                        <div class="col mt-2 mb-2" >
+                                            <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                        </div>
+                                        <div class="col mt-2 mb-2" >
+                                            <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                        </div>
+                                    </div> 
+                                    <h4 style="font-weight: 400;font-size: 18px;">Rs.229<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs.249</small> </h4>
+                                    <button type="button" onclick="addcart()" class="btn btn-outline-danger cart-btn" style="width: 100%;" >ADD TO CART</button>
+                                    <hr style="color: black;">
+                                    </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col mt-0 ">
+                                        <p style="color: white;width:75px;padding:0px 0px 0px 12px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;font-size: 13px;border-radius: 3px;" > 8% off</p>
+                                        <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-akhrot-100gm-5e6d2ea6d75eb.jpeg"  alt="almond 3" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                        <h1 style="font-weight: 400;font-size:20px ;">Akhrot (اخروٹ)</h1>
+                                        <div class="row " >
+                                            <div class="col mt-2 mb-2" >
+                                                <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                            </div>
+                                        </div> 
+                                        <h4 style="font-weight: 400;font-size: 18px;">Rs.175<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs.189</small> </h4>
+                                        <button type="button"onclick="addcart()"  class="btn btn-outline-danger" style="width: 100%;" >ADD TO CART</button>
+                                        <hr style="color: black;">
+                                    </div>    
+                                    <div class="col mt-0 ">
+                                        <p style="color: white;padding: 0px 0px 0px 12px;width: 75px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;border-radius: 3px;font-size: 13px;" > 3% off</p>
+                                        <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-anjeer-100gm-5e6d2e8e8172f.jpeg" alt="almond 4" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                        <h1 style="font-weight: 400;font-size:20px ;">Anjeer (انجیر)</h1>
+                                        <div class="row " >
+                                            <div class="col mt-2 mb-2" >
+                                                <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                            </div>
+                                        </div> 
+                                        <h4 style="font-weight: 400;font-size: 18px;">Rs.189<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs.198</small> </h4>
+                                        <button type="button" onclick="addcart()" class="btn btn-outline-danger" style="width: 100%;" >ADD TO CART</button>
+                                        <hr style="color: black;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-0 ">
+                                        <p style="color: white;padding: 0px 0px 0px 12px;width: 75px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;border-radius: 3px;font-size: 13px;" > 12% off</p>
+                                        <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-kaju-simple-100-gm-5e6d2ebe432c8.jpeg"  alt="almond 5" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                        <h1 style="font-weight: 400;font-size:20px ;">Kaju Roasted ( بھنے کاجو)</h1>
+                                        <div class="row " >
+                                            <div class="col mt-2 mb-2" >
+                                                <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                            </div>
+                                        </div> 
+                                        <h4 style="font-weight: 400;font-size: 18px;">Rs. 229<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs.254</small> </h4>
+                                        <button type="button" onclick="addcart()" class="btn btn-outline-danger" style="width: 100%;" >ADD TO CART</button>
+                                        <hr style="color: black;">
+                                    </div>
+                                    <div class="col mt-0 ">
+                                        <p style="color: white;padding:0px 0px 0px 12px;width: 75px;background-color: #51AA1A;text-transform: uppercase;border: 1px solid#51aa1b;border-radius: 3px;font-size: 13px;" > 7% off</p>
+                                        <img src="https://pictures.grocerapps.com/lgthumb/grocerapp-pista-roasted-200-gm-5e6d2ea334108.jpeg" alt="almond 6" style="padding: 0px 0px 0px 40px;width: 270px;">
+                                        <h1 style="font-weight: 400;font-size:20px ;">Pistachio Roasted (بھنا پستہ)</h1>
+                                        <div class="row " >
+                                            <div class="col mt-2 mb-2" >
+                                                <button type ="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;" >100g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success"  style="width: -1%;font-size: 15px;">500g</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">1Kg</button>
+                                            </div>
+                                            <div class="col mt-2 mb-2" >
+                                                <button type="button" class="btn btn-outline-success" style="width: -1%;font-size: 15px;">5Kg</button>
+                                            </div>
+                                        </div> 
+                                        <h4 style="font-weight: 400;font-size: 18px;">Rs.369<small style="font-weight: 300;padding-left: 5px;text-decoration-line: line-through;color: rgb(124, 134, 136);" >Rs. 291</small> </h4>
+                                        <button type="button" onclick="addcart()" class="btn btn-outline-danger" style="width: 100%;" >ADD TO CART</button>
+                                        <hr style="color: black;">
+                                    </div>
+                                </div>
+                               
+                               </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="footter">
+                    <div class="app-aim">
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h6 style="font-weight: 400;" >QUADRETE Natural and Organic Food aims to deliver household happiness by trying to be the best in following 3 things.</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-1">
+                                <i class="fas fa-usd-circle"></i> 
+                            </div>
+                            <div class="col">
+                               <h6 style="font-weight: 400;font-size: 20px;" >Best Prices & Offers</h6>
+                               <h6 style="font-weight: 400;color: #8b8686;;font-size: 17px;" >Cheaper prices than your local supermarket, great cashback offers to top it off.</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-1">
+                                <i class="far fa-square"></i>
+                            </div>
+                            <div class="col">
+                               <h6 style="font-weight: 400;font-size: 20px;" >Wide Assortment</h6>
+                               <h6 style="font-weight: 400;color: #8b8686;;font-size: 17px;" >Choose from 5000+ products across food, personal care, household & other categories.</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-1">
+                                <i class="fas fa-arrow-square-down"></i>
+                            </div>
+                            <div class="col">
+                               <h6 style="font-weight: 400;font-size: 20px;" >Easy Returns</h6>
+                               <h6 style="font-weight: 400;color: #8b8686;;font-size: 17px;" >Not satisfied with a product? Return it at the doorstep & get a refund within hours.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="row mt-5">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 20px;" >Categories</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Dry Fruits</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Cashew</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Mixed Nuts</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Almonds</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Walnuts</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Pistachio</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Dried Fig (Anjeer)</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Raisins Kishmish</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Dried Apricots</h6>
+                            </div>
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Honey</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Sidr 'Beri' Honey</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Black Forest Honey</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Natural Honey</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Acacia Honey</h6>
+                            </div>
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Dates</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Ajwa Dates</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Sweeteners / Sugar</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Raw White Sugar</h6>
+                                <h6 style="font-weight: 400;margin-bottom: auto;font-size: 16px;color: gray;" >-Organic Brown Sugar</h6>
+                            </div>
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Herbal and Organic</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Lemon Grass Tea</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Organic Tea</h6>
+                            </div>
+                            <div class="col">
+                                <h6 style="font-weight: 500;font-size: 18px;color: gray;" >Oils</h6>
+                                <h6 style="font-weight: 400; margin-bottom: auto;font-size: 16px;color: gray;" >-Organic Oils</h6>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="links">
+                        <div class="row mt-5">                           
+                                <h6 style="font-weight: 400;" >Useful Links</h6>
+                                <div class="col mt-2">
+                                    <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >Privacy Policy</h6></a>
+                                </div>
+                                <div class="col mt-2">
+                                    <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;">Return & Refund</h6></a>
+                                </div>
+                                <div class="col mt-2">
+                                    <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >FAQs</h6></a>
+                                </div>
+                                <div class="col mt-2">
+                                    <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >Careers</h6></a>
+                                </div>
+                        </div>
+                        <div class="row ">                           
+                            <div class="col mt-2">
+                                <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >Privacy Policy</h6></a>
+                            </div>
+                            <div class="col mt-2">
+                                <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;">Terms & Conditions</h6></a>
+                            </div>
+                            <div class="col mt-2">
+                                <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >Category Sitemap</h6></a>
+                            </div>
+                            <div class="col mt-2">
+                                <a href="" style="text-decoration: none;"> <h6 style="font-weight: 300;font-size: 18px;color: gray;" >Categories</h6></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div class="row mt-5">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 23px;" >QUADRETE Natural and Organic Food - Online Grocery Shopping </h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 300;color: gray;font-size: 17px;" >QUADRETE Natural and Organic Food makes shopping easier and more convenient than ever. </h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 19px;" >Online QUADRETE Natural and Organic Food store in Pakistan </h6>
+                            </div>
+                        </div>
+                        <div class="row mt-0">
+                            <div class="col">
+                                <h6 style="font-weight: 300;color: gray;font-size: 17px;" >Order online. All your favourite products from the low price online supermarket for grocery home delivery in Lahore, Pakistan. Best experience guaranteed.</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 19px;" >One stop shop for all your daily needs</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-0">
+                            <div class="col">
+                                <h6 style="font-weight: 300;color: gray;font-size: 17px;" >QUADRETE Natural and Organic Food is a low-price online supermarket that allows you to order products across categories like grocery, vegetables, beauty & wellness, household care, baby care, pet care and meats & seafood and gets them delivered to your doorstep.</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 19px;" >For best of prices, deals and offers; order online in Lahore, Islamabad, Rawalpindi and Faisalabad</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-0">
+                            <div class="col">
+                                <h6 style="font-weight: 300;color: gray;font-size: 17px;" >The delivery service is operational in all areas of Lahore: Ravi, Shalimar, Data Gunj Bakhsh, Samanabad, Gulberg, Allama Iqbal, Nishtar, Pak arab society, Bahria town, SA Gardens, DHA 1 to 7, wapda town, Capital Housing, Cantt and all other areas, Islamabad: Pakistan Secretariat Diplomatic Enclave A-17, Islamabad A-18, Islamabad B-17, Islamabad B-18, Islamabad C-15, Islamabad C-16, Islamabad</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-option">
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h6 style="font-weight: 400;font-size: 19px;" >Payment Options</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-0">
+                            <div class="col">
+                                <a href=""></a><img src="/DOWNLOADS/jazzcash.png" alt="wrong 1" style="height: 50px;"></a>
+                            </div>
+                            <div class="col gx-0">
+                                <a href=""></a><img src="/DOWNLOADS/easypaisa.png" alt="wrong 2" style="height: 62px; width: 103;"></a>
+                            </div>
+                            <div class="col gx-0">
+                                <a href=""><img src="/DOWNLOADS/visa.jpg" alt="wrong 0"style="height: 62px;"></a>
+                            </div>
+                            <div class="col-9 gx-0">
+                                <h6 style="font-weight: 200;padding-top: 17px;color: gray;font-size: 14px;" >Credit and Debit Cards, Cash on Delivery (COD) and EasyPaisa (Coming Soon)</h6>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <h6 style="font-weight: 200;color: gray;font-size: 14px;" >info@QUADRETE.com, 000-000-000-000</h6>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="js-file">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+        </div>
+
+   <div id="cart-page">
+    <div class="container cart_view" style="display: none;padding: 5px; border: 2px ridge rgb(177, 177, 177);" >
+        <div class="row mb-1  " >
+                <div class="row gx-0">
+                    <div class="col align-self-start"></div>
+
+                    <div class="col-1">
+                        <span onclick="closeCart()" style="   font-size: 25px; cursor: pointer;" c><i class="fal fa-times"></i></span>
+                    </div>
+                </div>
+ 
+         <h1 style="font-size: 35px;font-weight: 500;">
+             MY BAG ( 3 )
+ 
+ 
+         </h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-8 image">
+                        <img style="height: 170px;" src="https://pictures.grocerapps.com/lgthumb/grocerapp-almond-usa-100-gm-5e6d2eca309ed.jpeg" data-src="https://pictures.grocerapps.com/lgthumb/grocerapp-almond-usa-100-gm-5e6d2eca309ed.jpeg" alt="yes 0">
+                    </div>
+                    <div class="col-4">
+                        <div class="Name">
+                         <div class="row">
+                             <h6 style="font-size: 30px;font-weight: 300;color: gray;">Almond (بادام )</h6>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                         <div class="row">
+                             <div class="dropdown">
+                                 <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" style="font-size: 13px;">Quantity </button>
+                                 <ul class="dropdown-menu">
+                                   <li><a id="ABS" href="#">100g</a></li>
+                                   <li><a  href="#">0.5g</a></li>
+                                   <li><a href="#" id="ABS">1Kg</a></li>
+                                   <li><a href="#"id="ABS">5Kg</a></li>
+                                 </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="row mt-3">
+                                <h5 style="font-size: 21px ; ">1 * Rs25</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 align-self-start"></div>
+        </div>
+        <hr style="height:2px">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="row">
+                    <div class="col-8 image">
+                        <img style="height: 170px;" src="https://pictures.grocerapps.com/lgthumb/grocerapp-akhrot-100gm-5e6d2ea6d75eb.jpeg" alt="yes 0">
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="Name">
+                        <div class="row">
+                            <h6 style="font-size: 30px;font-weight: 300;color: gray;">Akhrot (اخروٹ)</h6>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                        <div class="row">
+                            <div class="dropdown">
+                                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" style="font-size: 13px;">Quantity</button>
+                                <ul class="dropdown-menu">
+                                    <li><a id="ABS" href="#">100g</a></li>
+                                    <li><a id="ABS" href="#">0.5g</a></li>
+                                    <li><a href="#" id="ABS">1Kg</a></li>
+                                    <li><a href="#"id="ABS">5Kg</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="row mt-3">
+                                <h5 style="font-size: 21px ; ">1 * Rs45</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 align-self-start" ></div>
+        </div>
+        
+        <hr style="height:2px">
+        <div class=" apply-button">
+            <div class="container">
+             <div class="row mt-1 mb-1">
+                <div class="col-7 align-self-end"></div>
+                 <div class="col">
+                  <a href=""><button type="button" class="btn btn-secondary" style="float: right;font-size: 15px;">Apply</button></a>
+                 </div>
+                 <div class="col-1 align-self-end"></div>
+             </div>
+            </div>
+        </div>
+ 
+        <div class="ending">
+            <div class=" row">
+                <div class="col">
+                    <form action="">
+                        <div class="row mx-1 mb-1 mt-1">
+                             <div class="col-3 gx-0">
+                                <label style="border: 1px solid black;width: 100%;font-size: 15px;padding: 4px 4px 5px 4px; text-align: center;font-weight: 300;" for="fname">Sub-Total</label>
+                             </div>
+                             <div class="col gx-0">
+                                <input type="text" name="fname" id="fname" value="Rs:4590" style="text-align: center;">
+                             </div>
+                             </div>
+                             <div class="row mx-1 mb-1 mt-1">
+                             <div class="col-3 gx-0">
+                                 <label style="border: 1px solid black;width: 100%; text-align: center;font-weight: 300;font-size: 15px;padding: 4px 4px 5px 4px;" for="fname">Taxes </label>
+                             </div>
+                             <div class="col gx-0">
+                                 <input type="text" name="fname" id="fname" value="Rs:57" style="text-align: center;">
+                             </div>
+                         </div>
+                         <div class="row mt-4 mx-1 ">
+                             <div class="col-3 gx-0 ">
+                                 <label style="border: 2px solid black;width: 100%; text-align: center;padding-top: 2px;padding-bottom: 2px;font-weight: 800;" for="fname">Total</label>
+                              </div>
+                              <div class="col gx-0">
+                                 <input type="text" name="fname" id="fname" value="Rs:4647" style="border: 2px solid black;text-align: center;padding-top: 2px;padding-bottom: 2px;">
+                              </div>
+                         </div>
+                         <div class="information">
+                             <div class="row mt-5 gx-0">
+                                 <h2 style="font-weight: 500; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 26px;letter-spacing: -2px;"> Delivery information</h2>
+                             </div>
+                             <div class="row mt-3 gx-0">
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">Full Name</label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Enter first and last name">
+                                     </form>
+                                 </div>
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">Phone Number</label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Enter Phone number">
+                                     </form>
+                                 </div>
+                             </div>
+                             <div class="row mt-3 gx-0">
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">Province</label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Please chose province">
+                                     </form>
+                                 </div>
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">City </label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Enter city name">
+                                     </form>
+                                 </div>
+                             </div>
+                             <div class="row mt-3 gx-0">
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">Area</label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Please chose area">
+                                     </form>
+                                 </div>
+                                 <div class="col-6">
+                                     <form action="">
+                                         <label style="font-size: small;padding-left: 5px;" for="fname">Address</label><br>
+                                         <input type="text " name="fname" style="font-weight: 100;width: 100%;border: none;padding-left: 15px;font-size: 15px;color: gray;" value="Please enter address">
+                                     </form>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="fotter">
+                             <div class="row mx-1">
+                                 <div class="col-7">
+                                     <div class=" row">
+                                         <div class="col-10">
+                                             <input type="submit" style="margin-top: 60px;color: white;background: #3a9b52;font-size: 20px;" value="Confirm My Order">
+                                         </div>
+                                         <div class="col-2 align-self-end"></div>
+                                     </div>
+                                 </div>
+                                 <div class="col-5">
+                                     <div class=" row ">
+                                         <div class=" col-5 align-self-start"></div>
+                                         <div class="col">
+                                             <div class="row ">
+                                                 <div class=" col-6 gx-0 pt-5">
+                                                     <a href=""  >
+                                                         <img src="/DOWNLOADS/messenger.png" alt="Order" style="height:40px;margin: 20px;">
+                                                     </a>
+                                                 </div>
+                                                 <div class="col-6 gx-0  pt-5  ">
+                                                     <a href=""  >
+                                                         <img src="/DOWNLOADS/whatsapp.png" alt="Order" style="height:40px;margin: 20px;">
+                                                     </a>
+                                                   </div>
+                                             </div>
+                                         </div>
+                                         <div class="col-4 align-self-end"></div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+ 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <script>
+         
+        var i=0;
+        function addcart(){
+            i++;
+            var icon_cart =document.getElementsByClassName('icon-cart');
+            icon_cart[0].innerHTML=i+'<i class=\"far fa-shopping-cart\" onclick="cart_view()"  ></i>';
+            return false;
+
+        }
+
+        function cart_view(){
+            var element=document.getElementsByClassName('cart_view')[0];
+
+            element.classList.add('cart_view_display');
+            element.style.display="block";
+            document.getElementById("landing-page").style.opacity="0.7";
+
+
+        }
+        
+        function closeCart(){
+
+            document.getElementsByClassName('cart_view')[0].style.display='none';
+            document.getElementById("landing-page").style.opacity="1";
+
+        }
+       
+
+ 
+
+
+    </script>
+    </body>
+</html>
